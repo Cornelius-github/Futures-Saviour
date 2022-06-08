@@ -16,24 +16,7 @@ public class BuildManager : MonoBehaviour
     public GameObject standardTurret;
     public GameObject startingTurret;
 
-    //done for one turret
-    //private void Start()
-    //{
-    //    //change later when doing different turrets
-    //    turretToBuild = standardTurret;
-    //}
-
     private TurretBlueprint turretToBuild;
-
-    //public GameObject GetTurretToBuild()
-    //{
-    //    return turretToBuild;
-    //}
-
-    //public void SetTurretToBuild(GameObject turret)
-    //{
-    //    turretToBuild = turret;
-    //}
 
     //property, as we only allow it to get something as it can never be set. basically we are writing a small function, that returns the result.
     public bool CanBuild {  get { return turretToBuild != null; } } 
@@ -45,14 +28,29 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurretOn (Node node)
     {
-        if (PlayerStats.Money < turretToBuild.cost)
+        //// if using currency to buy towers
+        //if (PlayerStats.Money < turretToBuild.cost)
+        //{
+        //    return;
+        //}
+        //if (PlayerStats.Money >= turretToBuild.cost)
+        //{
+        //    Debug.Log("build");
+        //    PlayerStats.Money -= turretToBuild.cost;
+
+        //    GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, (node.transform.position + node.offset), Quaternion.identity);
+        //    node.turret = turret;
+        //}
+
+        //if using count rather than currency to buy
+        if (turretToBuild.amount <= 0)
         {
             return;
         }
-        if (PlayerStats.Money >= turretToBuild.cost)
+        if (1 >= turretToBuild.amount)
         {
             Debug.Log("build");
-            PlayerStats.Money -= turretToBuild.cost;
+            turretToBuild.amount--;
 
             GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, (node.transform.position + node.offset), Quaternion.identity);
             node.turret = turret;

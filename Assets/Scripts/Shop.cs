@@ -9,6 +9,9 @@ public class Shop : MonoBehaviour
 
     BuildManager bm;
 
+    [Header("Turret Shop items")]
+    public GameObject boss1turret;
+
     private void Start()
     {
         bm = BuildManager.instance;
@@ -22,5 +25,6 @@ public class Shop : MonoBehaviour
     public void PurchaseStartingTurret() //just selection
     {
         bm.SelectTurretToBuild(secondTurret);
+        boss1turret.SetActive(true);
     }
 }

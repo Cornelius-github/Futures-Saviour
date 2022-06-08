@@ -9,6 +9,12 @@ public class WaveSpawner : MonoBehaviour
 
     //one enemy plan
     public Transform enemyPrefab;
+    public GameObject boss1;
+
+    //boss chance
+    private GameObject boss;
+    private int randomChance;
+    bool bossSpawn = true;
 
     //spawning location
     public Transform spawnpoint;
@@ -32,25 +38,43 @@ public class WaveSpawner : MonoBehaviour
 
         //floor cleans up the decimal places, not that useful for ints but useful for floats, etc.
         wavetext.text = Mathf.Floor(waveCount).ToString();
-
-        enemyPrefab.GetComponent<Enemy>().health += 1;
-        enemyPrefab.GetComponent<Enemy>().speed += 2;
     }
 
     //spawning each wave
     IEnumerator SpawnWave()
     {
+        //this was in update, which meant it was called every fucking frame, resulting in high speed that broke the game. i love code
+        if (waveCount > 1)
+        {
+            bossSpawn = false;
+            enemyPrefab.GetComponent<Enemy>().health += 1;
+            enemyPrefab.GetComponent<Enemy>().speed += 2;
+        }
+        
         waveCount++;
         for (int i = 0; i < waveCount; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f); //waits for .5 seconds then continues going through
+            yield return new WaitForSeconds(0.8f); //waits for .8 seconds then continues going through
         }
     }
 
     //spawning enemies
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
+        randomChance = Random.Range(1, 5);
+
+        if (randomChance == 4 || bossSpawn == true)
+        {
+            Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
+        }
+
+        //first boss
+        if (randomChance < 4 && bossSpawn == false)
+        {
+            boss = (GameObject) Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
+            bossSpawn = true;
+        }
+        
     }
 }

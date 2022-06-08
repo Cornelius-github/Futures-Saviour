@@ -13,10 +13,10 @@ public class Turrett : MonoBehaviour
     [Header("Attributes")]
     //unique attributes for turrets
 
-    public float range = 20f;
+    public float range;
 
     //shooting
-    public float fireRate = 1f;
+    public float fireRate;
     private float fireCountdown = 0f;
 
     [Header("Unity Setup Fields")]
@@ -92,6 +92,7 @@ public class Turrett : MonoBehaviour
     void Shoot()
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)

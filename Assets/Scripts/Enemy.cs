@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
-    public int health = 2;
+    public float speed;
+    public int health;
 
     private Transform target;
-    private int wavepointIndex = 0;
+    private int wavepointIndex;
+
+    //other scipts
+    Shop shop;
+
+
+    private void Awake()
+    {
+        health = 2;
+        speed = 5;
+    }
 
     private void Start()
     {
@@ -25,7 +35,17 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        Debug.Log("Die function");
+        if (gameObject.name == ("Boss1(Clone)"))
+        {
+            Debug.Log("turret available");
+            //player gains turret
+            shop.PurchaseStartingTurret();
+        }
+
+        Debug.Log("Die object");
         Destroy(gameObject);
+
     }
 
 
