@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Turrett : MonoBehaviour
 {
-    private Transform target;
+    public Transform target;
 
     //bullet spawns and object
     public GameObject bulletPrefab;

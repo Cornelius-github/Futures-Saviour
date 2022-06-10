@@ -1446,6 +1446,7 @@ MonoBehaviour:
     cost: 2
     amount: 0
   boss1turret: {fileID: 0}
+  boss1amount: {fileID: 0}
 --- !u!1001 &205938728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2760,7 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a860315b6b64de34785ad3d8860f0e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveCount: 5
+  waveCount: 0
   enemyPrefab: {fileID: 3994670876595048648, guid: 669ff9e6a76674c458601bc42a4a151a, type: 3}
   boss1: {fileID: 7999461717175597587, guid: 53d11eda821f8f244b1a46e0e08ef775, type: 3}
   spawnpoint: {fileID: 2074944262}
@@ -2793,7 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 0
-  startLives: 1000000
+  startLives: 10
   moneytext: {fileID: 505692462}
   liveText: {fileID: 1156455533}
 --- !u!114 &379414482
@@ -12562,6 +12563,7 @@ MonoBehaviour:
     cost: 0
     amount: 0
   boss1turret: {fileID: 1373954550}
+  boss1amount: {fileID: 901594144}
 --- !u!1001 &1568215591
 PrefabInstance:
   m_ObjectHideFlags: 0

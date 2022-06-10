@@ -6,11 +6,17 @@ public class BuildManager : MonoBehaviour
 {
     //singleton pattern done here; search for more around this to get a better understanding
 
-    public static BuildManager instance; //this stores a buildmanager in the buildmanager
+    public static BuildManager instance; //this stores a buildmanager in the buildmanager //other scipts
+    Shop shop;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        shop = Shop.instance;
     }
 
     public GameObject standardTurret;
@@ -49,11 +55,12 @@ public class BuildManager : MonoBehaviour
         }
         if (1 >= turretToBuild.amount)
         {
-            Debug.Log("build");
             turretToBuild.amount--;
 
             GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, (node.transform.position + node.offset), Quaternion.identity);
             node.turret = turret;
+
+            shop.InventoryCheck(turretToBuild);
         }
     }
 

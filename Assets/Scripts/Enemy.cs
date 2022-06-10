@@ -13,16 +13,10 @@ public class Enemy : MonoBehaviour
     //other scipts
     Shop shop;
 
-
-    private void Awake()
-    {
-        health = 2;
-        speed = 5;
-    }
-
     private void Start()
     {
         target = Waypoints.points[0];
+        shop = Shop.instance;
     }
 
     public void TakeDamage(int amount)
@@ -35,17 +29,15 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Die function");
         if (gameObject.name == ("Boss1(Clone)"))
         {
-            Debug.Log("turret available");
+            //increase amount for turret1
+            shop.secondTurret.amount++;
+
             //player gains turret
             shop.PurchaseStartingTurret();
         }
-
-        Debug.Log("Die object");
         Destroy(gameObject);
-
     }
 
 
