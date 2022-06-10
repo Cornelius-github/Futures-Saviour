@@ -26,6 +26,14 @@ public class WaveSpawner : MonoBehaviour
     //references for UI purposes
     public Text wavetext;
 
+    //for stopping waves after lost
+    LiveManager lm;
+
+
+    private void Start()
+    {
+        lm = LiveManager.instance;
+    }
     private void Update()
     {
         if (countdown <= 0f)
@@ -43,20 +51,24 @@ public class WaveSpawner : MonoBehaviour
     //spawning each wave
     IEnumerator SpawnWave()
     {
-        //this was in update, which meant it was called every fucking frame, resulting in high speed that broke the game. i love code
-        if (waveCount > 1)
+        if (lm.gameEnded == false) //spawns waves if the game has ended
         {
-            bossSpawn = false;
-            enemyPrefab.GetComponent<Enemy>().health += 1;
-            enemyPrefab.GetComponent<Enemy>().speed += 2;
+            //this was in update, which meant it was called every fucking frame, resulting in high speed that broke the game. i love code
+            if (waveCount > 1)
+            {
+                bossSpawn = false;
+                enemyPrefab.GetComponent<Enemy>().health = (1 + waveCount);
+                enemyPrefab.GetComponent<Enemy>().speed = (5 + waveCount);
+            }
+
+            waveCount++;
+            for (int i = 0; i < waveCount; i++)
+            {
+                SpawnEnemy();
+                yield return new WaitForSeconds(0.8f); //waits for .8 seconds then continues going through
+            }
         }
         
-        waveCount++;
-        for (int i = 0; i < waveCount; i++)
-        {
-            SpawnEnemy();
-            yield return new WaitForSeconds(0.8f); //waits for .8 seconds then continues going through
-        }
     }
 
     //spawning enemies
@@ -64,14 +76,17 @@ public class WaveSpawner : MonoBehaviour
     {
         randomChance = Random.Range(1, 5);
 
-        if (randomChance == 4 || bossSpawn == true)
+        if (randomChance < 4 || bossSpawn == true)
         {
             Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
         }
 
         //first boss
-        if (randomChance < 4 && bossSpawn == false)
+        if (randomChance == 4 && bossSpawn == false)
         {
+            boss1.GetComponent<Enemy>().health = (3 * waveCount);
+            boss1.GetComponent<Enemy>().speed = (9 * waveCount);
+
             boss = (GameObject) Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
             bossSpawn = true;
         }

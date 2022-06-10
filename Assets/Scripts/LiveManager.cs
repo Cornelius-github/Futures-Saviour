@@ -10,6 +10,13 @@ public class LiveManager : MonoBehaviour
     public Text WaveCount;
     public GameObject GameOver;
 
+    public static LiveManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -2765,7 +2765,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 3994670876595048648, guid: 669ff9e6a76674c458601bc42a4a151a, type: 3}
   boss1: {fileID: 7999461717175597587, guid: 53d11eda821f8f244b1a46e0e08ef775, type: 3}
   spawnpoint: {fileID: 2074944262}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 5
   wavetext: {fileID: 1426718560}
 --- !u!114 &379414480
 MonoBehaviour:
@@ -8247,7 +8247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 138}
+  m_AnchoredPosition: {x: 0, y: 87}
   m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011808848
@@ -8294,13 +8294,13 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 2425
+  m_TextStyleHashCode: 2426
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8883,7 +8883,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8852495935859477858, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: m_Name

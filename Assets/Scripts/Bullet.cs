@@ -60,6 +60,6 @@ public class Bullet : MonoBehaviour
             e.TakeDamage(damage);
         }
 
-        PlayerStats.Money += 1;
+        PlayerStats.Money++;
     }
 }
