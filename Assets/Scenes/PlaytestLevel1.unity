@@ -2810,6 +2810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEnded: 0
+  waveCounter: 0
   WaveCount: {fileID: 2131948653}
   GameOver: {fileID: 1178348700}
 --- !u!114 &379414483

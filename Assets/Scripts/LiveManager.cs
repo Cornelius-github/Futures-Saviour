@@ -7,14 +7,17 @@ public class LiveManager : MonoBehaviour
 {
     public bool gameEnded = false;
 
+    public int waveCounter;
     public Text WaveCount;
     public GameObject GameOver;
 
     public static LiveManager instance;
+    WaveSpawner ws;
 
     private void Awake()
     {
         instance = this;
+        ws = WaveSpawner.instance;
     }
 
     // Update is called once per frame
@@ -32,6 +35,9 @@ public class LiveManager : MonoBehaviour
 
     void EndGame()
     {
+        //WaveCount.text = ws.waveCount.ToString();
+        WaveCount.text = waveCounter.ToString();
+
         GameOver.SetActive(true);
         gameEnded = true;
     }

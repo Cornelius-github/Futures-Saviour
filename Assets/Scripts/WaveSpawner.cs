@@ -29,10 +29,13 @@ public class WaveSpawner : MonoBehaviour
     //for stopping waves after lost
     LiveManager lm;
 
+    public static WaveSpawner instance;
+
 
     private void Start()
     {
         lm = LiveManager.instance;
+        instance = this;
     }
     private void Update()
     {
@@ -62,6 +65,7 @@ public class WaveSpawner : MonoBehaviour
             }
 
             waveCount++;
+            lm.waveCounter = waveCount;
             for (int i = 0; i < waveCount; i++)
             {
                 SpawnEnemy();
