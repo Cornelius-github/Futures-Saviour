@@ -30,16 +30,15 @@ public class Node : MonoBehaviour
 
     private void OnMouseDown()
     {
-
-        if (!buildManager.CanBuild)
-        {
-            return;
-        }
-
         //called when pressed down on the mouse button whilst hovering
         if (turret != null)
         {
-            //Debug.Log("Unable to Build"); //display this on screen at some point
+            buildManager.SelectNode(this);
+            return;
+        }
+
+        if (!buildManager.CanBuild)
+        {
             return;
         }
 
@@ -70,5 +69,10 @@ public class Node : MonoBehaviour
     {
         //when the mouse leaves
         rend.material.color = startColor;
+    }
+
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position;
     }
 }

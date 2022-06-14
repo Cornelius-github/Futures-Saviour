@@ -9,6 +9,8 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance; //this stores a buildmanager in the buildmanager //other scipts
     Shop shop;
 
+    public NodeUI nodeUI;
+
     private void Awake()
     {
         instance = this;
@@ -23,6 +25,7 @@ public class BuildManager : MonoBehaviour
     public GameObject startingTurret;
 
     private TurretBlueprint turretToBuild;
+    private Node selectedNode;
 
     //property, as we only allow it to get something as it can never be set. basically we are writing a small function, that returns the result.
     public bool CanBuild {  get { return turretToBuild != null; } } 
@@ -30,6 +33,27 @@ public class BuildManager : MonoBehaviour
     public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
+        DeselectNode();
+    }
+
+    public void SelectNode(Node node)
+    {
+        if (selectedNode == node)
+        {
+            DeselectNode();
+            return;
+        }
+
+        selectedNode = node;
+        turretToBuild = null;
+
+        nodeUI.SetTarget(selectedNode);
+    }
+
+    public void DeselectNode()
+    {
+        selectedNode = null;
+        nodeUI.Hide();
     }
 
     public void BuildTurretOn (Node node)
