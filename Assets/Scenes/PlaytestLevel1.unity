@@ -6850,7 +6850,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'UPGRADE
 
-    50'
+    -50'
 --- !u!222 &778926253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9038,7 +9038,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'SELL
 
-    20'
+    +20'
 --- !u!222 &1071060701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15279,7 +15279,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1860961168
 Canvas:
   m_ObjectHideFlags: 0
