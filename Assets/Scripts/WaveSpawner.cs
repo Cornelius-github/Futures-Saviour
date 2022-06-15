@@ -60,7 +60,7 @@ public class WaveSpawner : MonoBehaviour
             if (waveCount > 1)
             {
                 bossSpawn = false;
-                if (enemyPrefab.GetComponent<Enemy>().speed >= 500)
+                if (enemyPrefab.GetComponent<Enemy>().speed <= 500)
                 {
                     enemyPrefab.GetComponent<Enemy>().health = (1 + waveCount);
                     enemyPrefab.GetComponent<Enemy>().speed = (5 + waveCount);
@@ -91,7 +91,7 @@ public class WaveSpawner : MonoBehaviour
         //first boss
         if (randomChance == 4 && bossSpawn == false)
         {
-            if (boss1.GetComponent<Enemy>().speed >= 500)
+            if (boss1.GetComponent<Enemy>().speed <= 500)
             {
                 boss1.GetComponent<Enemy>().health = (3 * waveCount);
                 boss1.GetComponent<Enemy>().speed = (9 * waveCount);

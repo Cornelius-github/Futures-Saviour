@@ -9317,11 +9317,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8852495935859477858, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: m_Name
       value: PlayerTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8852495935859477885, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: m_RootOrder
