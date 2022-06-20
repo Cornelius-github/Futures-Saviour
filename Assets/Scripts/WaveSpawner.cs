@@ -7,9 +7,11 @@ public class WaveSpawner : MonoBehaviour
 {
     public int waveCount = 0;
 
-    //one enemy plan
+    //enemies
     public Transform enemyPrefab;
     public GameObject boss1;
+    public GameObject boss2;
+    public GameObject boss3;
 
     //boss chance
     private GameObject boss;
@@ -81,25 +83,51 @@ public class WaveSpawner : MonoBehaviour
     //spawning enemies
     void SpawnEnemy()
     {
-        randomChance = Random.Range(1, 5);
+        randomChance = Random.Range(1, 25);
 
-        if (randomChance < 4 || bossSpawn == true)
+        if (randomChance < 15 || bossSpawn == true)
         {
             Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
         }
 
         //first boss
-        if (randomChance == 4 && bossSpawn == false)
+        if ((randomChance >= 16 && randomChance <=19) && bossSpawn == false)
         {
             if (boss1.GetComponent<Enemy>().speed <= 500)
             {
-                boss1.GetComponent<Enemy>().health = (3 * waveCount);
-                boss1.GetComponent<Enemy>().speed = (9 * waveCount);
+                boss1.GetComponent<Enemy>().health = (5 * waveCount);
+                boss1.GetComponent<Enemy>().speed = (6 * waveCount);
             }
 
             boss = (GameObject) Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
             bossSpawn = true;
         }
-        
+
+        //second boss
+        if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
+        {
+            if (boss2.GetComponent<Enemy>().speed <= 500)
+            {
+                boss2.GetComponent<Enemy>().health = (2 * waveCount);
+                boss2.GetComponent<Enemy>().speed = (9 * waveCount);
+            }
+
+            boss = (GameObject)Instantiate(boss2, spawnpoint.position, spawnpoint.rotation);
+            bossSpawn = true;
+        }
+
+        //second boss
+        if ((randomChance > 22) && bossSpawn == false)
+        {
+            if (boss3.GetComponent<Enemy>().speed <= 500)
+            {
+                boss3.GetComponent<Enemy>().health = (9 * waveCount);
+                boss3.GetComponent<Enemy>().speed = (2 * waveCount);
+            }
+
+            boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);
+            bossSpawn = true;
+        }
+
     }
 }

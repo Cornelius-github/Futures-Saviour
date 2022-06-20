@@ -40,6 +40,25 @@ public class Enemy : MonoBehaviour
             //player gains turret
             shop.PurchaseStartingTurret();
         }
+
+        if (gameObject.name == ("Boss2(Clone)"))
+        {
+            //increase amount for turret1
+            shop.thirdTurret.amount++;
+
+            //player gains turret
+            shop.PurchaseBoss2Turret();
+        }
+
+        if (gameObject.name == ("Boss3(Clone)"))
+        {
+            //increase amount for turret1
+            shop.fourthTurret.amount++;
+
+            //player gains turret
+            shop.PurchaseBoss3Turret();
+        }
+
         Destroy(gameObject);
     }
 

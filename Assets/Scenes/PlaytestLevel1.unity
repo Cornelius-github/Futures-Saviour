@@ -1569,8 +1569,20 @@ MonoBehaviour:
     prefab: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
     cost: 2
     amount: 0
+  thirdTurret:
+    prefab: {fileID: 0}
+    cost: 0
+    amount: 0
+  fourthTurret:
+    prefab: {fileID: 0}
+    cost: 0
+    amount: 0
   boss1turret: {fileID: 0}
   boss1amount: {fileID: 0}
+  boss2turret: {fileID: 0}
+  boss2amount: {fileID: 0}
+  boss3turret: {fileID: 0}
+  boss3amount: {fileID: 0}
 --- !u!1001 &205938728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2992,6 +3004,8 @@ MonoBehaviour:
   waveCount: 0
   enemyPrefab: {fileID: 3994670876595048648, guid: 669ff9e6a76674c458601bc42a4a151a, type: 3}
   boss1: {fileID: 7999461717175597587, guid: 53d11eda821f8f244b1a46e0e08ef775, type: 3}
+  boss2: {fileID: 1211152947462872498, guid: b388f433177b2dd4785cf8ef461e2bb2, type: 3}
+  boss3: {fileID: 6610930804358811746, guid: cd6c460ecbd1ae448b40e338e0ceaf9d, type: 3}
   spawnpoint: {fileID: 2074944262}
   timeBetweenWaves: 5
   wavetext: {fileID: 1426718560}
@@ -3010,6 +3024,8 @@ MonoBehaviour:
   nodeUI: {fileID: 57194271}
   standardTurret: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
   startingTurret: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
+  bossTurret2: {fileID: 3409482333921097094, guid: 59357852af4624d41861bb6a1ef4223c, type: 3}
+  bossTurret3: {fileID: 5156778844639649822, guid: 849353d4c1fbd554397146ecaf6e917b, type: 3}
 --- !u!114 &379414481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10471,7 +10487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1181495155
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11902,7 +11918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1373954551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13416,8 +13432,20 @@ MonoBehaviour:
     prefab: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
     cost: 0
     amount: 0
+  thirdTurret:
+    prefab: {fileID: 3409482333921097094, guid: 59357852af4624d41861bb6a1ef4223c, type: 3}
+    cost: 0
+    amount: 0
+  fourthTurret:
+    prefab: {fileID: 5156778844639649822, guid: 849353d4c1fbd554397146ecaf6e917b, type: 3}
+    cost: 0
+    amount: 0
   boss1turret: {fileID: 1373954550}
   boss1amount: {fileID: 901594144}
+  boss2turret: {fileID: 1181495154}
+  boss2amount: {fileID: 951542278}
+  boss3turret: {fileID: 1914707233}
+  boss3amount: {fileID: 50200531}
 --- !u!1001 &1568215591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16075,7 +16103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1914707234
 RectTransform:
   m_ObjectHideFlags: 0
