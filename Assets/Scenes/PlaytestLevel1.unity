@@ -1565,18 +1565,26 @@ MonoBehaviour:
     prefab: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   secondTurret:
     prefab: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
     cost: 2
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   thirdTurret:
     prefab: {fileID: 0}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   fourthTurret:
     prefab: {fileID: 0}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   boss1turret: {fileID: 0}
   boss1amount: {fileID: 0}
   boss2turret: {fileID: 0}
@@ -7079,7 +7087,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'UPGRADE
 
-    -50'
+    -10'
 --- !u!222 &778926253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7232,7 +7240,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799073435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 57194271}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799073435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13428,18 +13448,26 @@ MonoBehaviour:
     prefab: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   secondTurret:
     prefab: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   thirdTurret:
     prefab: {fileID: 3409482333921097094, guid: 59357852af4624d41861bb6a1ef4223c, type: 3}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   fourthTurret:
     prefab: {fileID: 5156778844639649822, guid: 849353d4c1fbd554397146ecaf6e917b, type: 3}
     cost: 0
     amount: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 50
   boss1turret: {fileID: 1373954550}
   boss1amount: {fileID: 901594144}
   boss2turret: {fileID: 1181495154}
@@ -14928,7 +14956,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1744207102}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 57194271}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1744207102
 MonoBehaviour:
   m_ObjectHideFlags: 0

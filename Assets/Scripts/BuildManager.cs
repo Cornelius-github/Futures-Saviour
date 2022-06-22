@@ -58,22 +58,9 @@ public class BuildManager : MonoBehaviour
         nodeUI.Hide();
     }
 
-    public void BuildTurretOn (Node node)
+    public TurretBlueprint GetTurretToBuild()
     {
-        //if using count rather than currency to buy
-        if (turretToBuild.amount <= 0)
-        {
-            return;
-        }
-        if (1 <= turretToBuild.amount)
-        {
-            turretToBuild.amount--;
-
-            GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, (node.transform.position + node.offset), Quaternion.identity);
-            node.turret = turret;
-
-            shop.InventoryCheck(turretToBuild);
-        }
+        return turretToBuild;
     }
 
 }

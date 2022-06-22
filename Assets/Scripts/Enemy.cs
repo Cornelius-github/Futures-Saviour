@@ -22,11 +22,11 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
-        Debug.Log("The enemies health is now: " + health);
+        //Debug.Log("The enemies health is now: " + health);
         if (health <= 0)
         {
             Die();
-            Debug.Log("The enemy has died");
+            //Debug.Log("The enemy has died");
         }
         return;
     }

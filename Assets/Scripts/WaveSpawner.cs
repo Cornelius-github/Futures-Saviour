@@ -64,7 +64,7 @@ public class WaveSpawner : MonoBehaviour
                 bossSpawn = false;
                 if (enemyPrefab.GetComponent<Enemy>().speed <= 500)
                 {
-                    enemyPrefab.GetComponent<Enemy>().health = (1 + waveCount);
+                    enemyPrefab.GetComponent<Enemy>().health = (1);
                     enemyPrefab.GetComponent<Enemy>().speed = (5 + waveCount);
                 }
             }
@@ -95,8 +95,13 @@ public class WaveSpawner : MonoBehaviour
         {
             if (boss1.GetComponent<Enemy>().speed <= 500)
             {
-                boss1.GetComponent<Enemy>().health = (5 * waveCount);
-                boss1.GetComponent<Enemy>().speed = (6 * waveCount);
+                boss1.GetComponent<Enemy>().health = (3 + waveCount);
+                boss1.GetComponent<Enemy>().speed = (3 * waveCount);
+            }
+
+            if (waveCount <= 10)
+            {
+                boss1.GetComponent<Enemy>().health = (3);
             }
 
             boss = (GameObject) Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
@@ -108,8 +113,13 @@ public class WaveSpawner : MonoBehaviour
         {
             if (boss2.GetComponent<Enemy>().speed <= 500)
             {
-                boss2.GetComponent<Enemy>().health = (2 * waveCount);
-                boss2.GetComponent<Enemy>().speed = (9 * waveCount);
+                boss2.GetComponent<Enemy>().health = (2 + waveCount);
+                boss2.GetComponent<Enemy>().speed = (5 * waveCount);
+            }
+
+            if (waveCount <= 10)
+            {
+                boss2.GetComponent<Enemy>().health = (2);
             }
 
             boss = (GameObject)Instantiate(boss2, spawnpoint.position, spawnpoint.rotation);
@@ -121,8 +131,13 @@ public class WaveSpawner : MonoBehaviour
         {
             if (boss3.GetComponent<Enemy>().speed <= 500)
             {
-                boss3.GetComponent<Enemy>().health = (9 * waveCount);
-                boss3.GetComponent<Enemy>().speed = (2 * waveCount);
+                boss3.GetComponent<Enemy>().health = (5 + waveCount);
+                boss3.GetComponent<Enemy>().speed = (1 * waveCount);
+            }
+
+            if (waveCount <= 10)
+            {
+                boss3.GetComponent<Enemy>().health = (5);
             }
 
             boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);

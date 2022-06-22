@@ -21,4 +21,18 @@ public class NodeUI : MonoBehaviour
     {
         ui.SetActive(false);
     }
+
+    //hook up to uprgade
+    public void Upgrade()
+    {
+        target.UpgradeTurret();
+        BuildManager.instance.DeselectNode();
+    }
+
+    //hook up to sell
+    public void Sell()
+    {
+        target.SellTurret();
+        BuildManager.instance.DeselectNode();
+    }
 }
