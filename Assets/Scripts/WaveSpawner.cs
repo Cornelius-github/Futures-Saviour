@@ -25,6 +25,8 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
+    public float enemyGap = 0.8f;
+
     //references for UI purposes
     public Text wavetext;
 
@@ -74,7 +76,13 @@ public class WaveSpawner : MonoBehaviour
             for (int i = 0; i < waveCount; i++)
             {
                 SpawnEnemy();
-                yield return new WaitForSeconds(0.8f); //waits for .8 seconds then continues going through
+                yield return new WaitForSeconds(enemyGap); //waits for .8 seconds then continues going through
+            }
+
+            if (((waveCount / 10) == 1)) // add this if the idea is to shorten the gap - && enemyGap >= 0
+            {
+                enemyPrefab.GetComponent<Enemy>().health += 1;
+                //enemyGap -= 0.1f;
             }
         }
         

@@ -20,6 +20,8 @@ public class Shop : MonoBehaviour
     public GameObject boss3turret;
     public Text boss3amount;
 
+    public string currentTurret;
+
     public static Shop instance; //this stores a buildmanager in the buildmanager
 
     private void Awake()
@@ -57,6 +59,23 @@ public class Shop : MonoBehaviour
         bm.SelectTurretToBuild(fourthTurret);
         boss3turret.SetActive(true);
     }
+
+    //button functions
+    public void SelectTurret1()
+    {
+        bm.SelectTurretToBuild(secondTurret);
+    }
+
+    public void SelectTurret2()
+    {
+        bm.SelectTurretToBuild(thirdTurret);
+    }
+
+    public void SelectTurret3()
+    {
+        bm.SelectTurretToBuild(fourthTurret);
+    }
+
 
     public void InventoryCheck(TurretBlueprint turret)
     {
