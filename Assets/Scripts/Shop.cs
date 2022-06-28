@@ -36,27 +36,27 @@ public class Shop : MonoBehaviour
 
     public void PurchaseStandardTurret() //just selection
     {
-        bm.SelectTurretToBuild(startingTurret);
+        //bm.SelectTurretToBuild(startingTurret);
     }
 
     public void PurchaseStartingTurret() //just selection
     {
         boss1amount.text = secondTurret.amount.ToString();
-        bm.SelectTurretToBuild(secondTurret);
+        //bm.SelectTurretToBuild(secondTurret);
         boss1turret.SetActive(true);
     }
 
     public void PurchaseBoss2Turret() //just selection
     {
         boss2amount.text = thirdTurret.amount.ToString();
-        bm.SelectTurretToBuild(thirdTurret);
+        //bm.SelectTurretToBuild(thirdTurret);
         boss2turret.SetActive(true);
     }
 
     public void PurchaseBoss3Turret() //just selection
     {
         boss3amount.text = fourthTurret.amount.ToString();
-        bm.SelectTurretToBuild(fourthTurret);
+        //bm.SelectTurretToBuild(fourthTurret);
         boss3turret.SetActive(true);
     }
 
