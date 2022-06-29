@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
     public GameObject ui;
+    public Text upgradeText;
 
     private Node target;
+
+    private int upgrade;
 
     public void SetTarget(Node node)
     {
@@ -14,7 +18,11 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
+        //upgrade = target.GetComponent<TurretBlueprint>().upgradeCost;
+        //upgradeText.text = ("Upgrade" + "/n" + "-" + upgrade);
+
         ui.SetActive(true);
+
     }
 
     public void Hide()

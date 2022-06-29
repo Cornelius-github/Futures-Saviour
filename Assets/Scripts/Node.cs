@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 //building nodes
 public class Node : MonoBehaviour
@@ -24,10 +25,12 @@ public class Node : MonoBehaviour
     //making an offset for building
     public Vector3 offset;
 
-    public int UpgradingIncrease = 1;
+    public int UpgradingIncrease = 5;
 
     BuildManager buildManager;
     Shop shop;
+
+    public Text nodeUI;
 
     private void Start()
     {
@@ -88,18 +91,16 @@ public class Node : MonoBehaviour
         turret.GetComponent<Turrett>().range += UpgradingIncrease;
         turret.GetComponent<Turrett>().bulletPrefab.GetComponent<Bullet>().damage += UpgradingIncrease;
 
-        ////getting rid of old turret
-        //Destroy(turret);
-        ////building the new upgraded turret
-        //GameObject _turret = (GameObject)Instantiate(currentBlueprint.upgradedPrefab, (transform.position + offset), Quaternion.identity);
-        //turret = _turret;
-
         //currentBlueprint = blueprint;
 
         ////whenever upgrading is done
         //isUpgraded = true;
 
         //turret has been upgraded
+        currentBlueprint.upgradeCost += UpgradingIncrease;
+
+        nodeUI.text = ("UPGRADE" + "\n" +
+            "-" + currentBlueprint.upgradeCost);
         return;
     }
 
