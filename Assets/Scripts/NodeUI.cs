@@ -18,8 +18,8 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
-        //upgrade = target.GetComponent<TurretBlueprint>().upgradeCost;
-        //upgradeText.text = ("Upgrade" + "/n" + "-" + upgrade);
+        upgrade = target.currentBlueprint.upgradeCost;
+        upgradeText.text = ("UPGRADE" + "\n" + "-" + upgrade);
 
         ui.SetActive(true);
 
