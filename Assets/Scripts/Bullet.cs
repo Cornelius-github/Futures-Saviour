@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (target == null)
         {
             Destroy(gameObject);
@@ -46,9 +47,6 @@ public class Bullet : MonoBehaviour
         //GameObject efffectIns = (GameObject)Instantiate(ImpactEffect, transform.position, transform.rotation);
         //Destroy(efffectIns, 2f);
         Damage(target);
-        
-        ////destroying enemy
-        //Destroy(target.gameObject);
     }
 
     void Damage(Transform enemy)
