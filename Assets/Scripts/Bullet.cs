@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     public GameObject ImpactEffect;
     public float speed = 1f;
-    public int damage = 1;
+    public float damage = 1;
 
     public void Seek(Transform _target)
     {
@@ -44,8 +44,8 @@ public class Bullet : MonoBehaviour
     void HitTarget()
     {
         //animation/particle
-        //GameObject efffectIns = (GameObject)Instantiate(ImpactEffect, transform.position, transform.rotation);
-        //Destroy(efffectIns, 2f);
+        GameObject efffectIns = (GameObject)Instantiate(ImpactEffect, target.position, target.rotation);
+        Destroy(efffectIns, 1f);
         Damage(target);
     }
 

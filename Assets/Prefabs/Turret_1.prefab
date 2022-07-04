@@ -142,7 +142,7 @@ MonoBehaviour:
   target: {fileID: 0}
   bulletPrefab: {fileID: 2162310700979906053, guid: 63cae3ca2602bf84ab04086224991dac, type: 3}
   firePoint: {fileID: 3646987665762638455}
-  range: 12
+  range: 10
   fireRate: 2
   enemyTag: Enemy
   partToRotate: {fileID: 3646987666911851736}

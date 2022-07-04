@@ -26,6 +26,7 @@ public class Node : MonoBehaviour
     public Vector3 offset;
 
     public int UpgradingIncrease = 5;
+    public float statUpgrades = 0.4f;
 
     BuildManager buildManager;
     Shop shop;
@@ -87,9 +88,9 @@ public class Node : MonoBehaviour
         PlayerStats.Money -= currentBlueprint.upgradeCost;
 
         //consistent upgrades
-        turret.GetComponent<Turrett>().fireRate += UpgradingIncrease;
-        turret.GetComponent<Turrett>().range += UpgradingIncrease;
-        turret.GetComponent<Turrett>().bulletPrefab.GetComponent<Bullet>().damage += UpgradingIncrease;
+        turret.GetComponent<Turrett>().fireRate += statUpgrades;
+        turret.GetComponent<Turrett>().range += statUpgrades;
+        turret.GetComponent<Turrett>().bulletPrefab.GetComponent<Bullet>().damage += statUpgrades;
 
         //currentBlueprint = blueprint;
 

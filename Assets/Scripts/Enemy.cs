@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed;
-    public int health;
+    public float health;
 
     private Transform target;
     private int wavepointIndex;
@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
         shop = Shop.instance;
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
         //Debug.Log("The enemies health is now: " + health);
