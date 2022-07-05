@@ -12,6 +12,8 @@ public class NodeUI : MonoBehaviour
 
     private int upgrade;
 
+    bool currentlyWaiting = false;
+
     public void SetTarget(Node node)
     {
         target = node;
@@ -20,9 +22,14 @@ public class NodeUI : MonoBehaviour
 
         upgrade = target.currentBlueprint.upgradeCost;
         upgradeText.text = ("UPGRADE" + "\n" + "-" + upgrade);
+        
+        if(currentlyWaiting == false)
+        {
+            ui.SetActive(true);
+        }
 
-        ui.SetActive(true);
-
+        StopAllCoroutines();
+        WaitingUpgrade();
     }
 
     public void Hide()
@@ -42,5 +49,18 @@ public class NodeUI : MonoBehaviour
     {
         target.SellTurret();
         BuildManager.instance.DeselectNode();
+    }
+
+    IEnumerator WaitingUpgrade()
+    {
+        Debug.Log("Waiting");
+
+        currentlyWaiting = true;
+
+        yield return new WaitForSeconds(2);
+
+        currentlyWaiting = false;
+
+        Debug.Log("No longer waiting");
     }
 }
