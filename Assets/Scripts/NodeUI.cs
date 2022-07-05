@@ -27,14 +27,14 @@ public class NodeUI : MonoBehaviour
         {
             ui.SetActive(true);
         }
-
-        StopAllCoroutines();
-        WaitingUpgrade();
     }
 
     public void Hide()
     {
         ui.SetActive(false);
+
+        StopAllCoroutines();
+        WaitingUpgrade();
     }
 
     //hook up to uprgade
@@ -57,7 +57,7 @@ public class NodeUI : MonoBehaviour
 
         currentlyWaiting = true;
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(25f);
 
         currentlyWaiting = false;
 
