@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class NodeUI : MonoBehaviour
 {
@@ -14,6 +15,19 @@ public class NodeUI : MonoBehaviour
 
     [SerializeField]
     bool currentlyWaiting = false;
+
+    public void Update()
+    {
+        if (ui.gameObject.activeSelf == true)
+        {
+            currentlyWaiting = true;
+        }
+        else
+        {
+            currentlyWaiting = false;
+        }
+    }
+
 
     public void SetTarget(Node node)
     {
@@ -28,14 +42,23 @@ public class NodeUI : MonoBehaviour
         {
             ui.SetActive(true);
         }
+
+        //if (EventSystem.current.IsPointerOverGameObject())
+        //{
+        //    return;
+        //}
+        //else
+        //{
+        //    ui.SetActive(true);
+        //}
     }
 
     public void Hide()
     {
         ui.SetActive(false);
 
-        StopAllCoroutines();
-        StartCoroutine(WaitingUpgrade());
+        //StopAllCoroutines();
+        //StartCoroutine(WaitingUpgrade());
     }
 
     //hook up to uprgade
