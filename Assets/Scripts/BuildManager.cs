@@ -55,12 +55,23 @@ public class BuildManager : MonoBehaviour
     public void DeselectNode()
     {
         selectedNode = null;
-        nodeUI.Hide();
+
+        StopAllCoroutines();
+        StartCoroutine(Waiting());
     }
 
     public TurretBlueprint GetTurretToBuild()
     {
         return turretToBuild;
     }
+
+    IEnumerator Waiting()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        nodeUI.Hide();
+    }
+
+    
 
 }

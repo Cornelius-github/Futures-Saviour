@@ -16,16 +16,9 @@ public class NodeUI : MonoBehaviour
     [SerializeField]
     bool currentlyWaiting = false;
 
-    public void Update()
+    public void FixedUpdate()
     {
-        if (ui.gameObject.activeSelf == true)
-        {
-            currentlyWaiting = true;
-        }
-        else
-        {
-            currentlyWaiting = false;
-        }
+        
     }
 
 
@@ -38,53 +31,52 @@ public class NodeUI : MonoBehaviour
         upgrade = target.currentBlueprint.upgradeCost;
         upgradeText.text = ("UPGRADE" + "\n" + "-" + upgrade);
 
+        if (ui.gameObject.activeSelf == true)
+        {
+            currentlyWaiting = true;
+            Debug.Log("not waiting");
+        }
+        else
+        {
+            currentlyWaiting = false;
+            Debug.Log("waiting");
+        }
+
+
+
         if (currentlyWaiting == false)
         {
             ui.SetActive(true);
         }
-
-        //if (EventSystem.current.IsPointerOverGameObject())
-        //{
-        //    return;
-        //}
-        //else
-        //{
-        //    ui.SetActive(true);
-        //}
     }
 
     public void Hide()
     {
         ui.SetActive(false);
-
-        //StopAllCoroutines();
-        //StartCoroutine(WaitingUpgrade());
     }
 
     //hook up to uprgade
     public void Upgrade()
     {
         target.UpgradeTurret();
-        BuildManager.instance.DeselectNode();
+
+        StopAllCoroutines();
+        StartCoroutine(UpgradeWait());
     }
 
     //hook up to sell
     public void Sell()
     {
         target.SellTurret();
-        BuildManager.instance.DeselectNode();
+
+        StopAllCoroutines();
+        StartCoroutine(UpgradeWait());
     }
 
-    IEnumerator WaitingUpgrade()
+    IEnumerator UpgradeWait()
     {
-        Debug.Log("Waiting");
+        yield return new WaitForSeconds(1f);
 
-        currentlyWaiting = true;
-
-        yield return new WaitForSeconds(5f);
-
-        currentlyWaiting = false;
-
-        Debug.Log("No longer waiting");
+        BuildManager.instance.DeselectNode();
     }
 }
