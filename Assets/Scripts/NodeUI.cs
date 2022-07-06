@@ -12,6 +12,7 @@ public class NodeUI : MonoBehaviour
 
     private int upgrade;
 
+    [SerializeField]
     bool currentlyWaiting = false;
 
     public void SetTarget(Node node)
@@ -22,8 +23,8 @@ public class NodeUI : MonoBehaviour
 
         upgrade = target.currentBlueprint.upgradeCost;
         upgradeText.text = ("UPGRADE" + "\n" + "-" + upgrade);
-        
-        if(currentlyWaiting == false)
+
+        if (currentlyWaiting == false)
         {
             ui.SetActive(true);
         }
@@ -34,7 +35,7 @@ public class NodeUI : MonoBehaviour
         ui.SetActive(false);
 
         StopAllCoroutines();
-        WaitingUpgrade();
+        StartCoroutine(WaitingUpgrade());
     }
 
     //hook up to uprgade
@@ -57,7 +58,7 @@ public class NodeUI : MonoBehaviour
 
         currentlyWaiting = true;
 
-        yield return new WaitForSeconds(25f);
+        yield return new WaitForSeconds(5f);
 
         currentlyWaiting = false;
 
