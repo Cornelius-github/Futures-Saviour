@@ -11769,6 +11769,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8852495935859477858, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 913978461424390387, guid: a5d70bfc1a7c25444b5b001208a82e73, type: 3}
     - target: {fileID: 8852495935859477881, guid: 02c15f727c679a94e96cb60f63dce7e9, type: 3}
       propertyPath: m_Name
       value: PlayerTurret
