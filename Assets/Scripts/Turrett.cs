@@ -91,6 +91,10 @@ public class Turrett : MonoBehaviour
 
     void Shoot()
     {
+        Color newColor = this.GetComponent<Material>().color;
+
+        bulletPrefab.GetComponent<Material>().SetColor("newColor", newColor);
+
         //GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         GameObject bulletGO = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
