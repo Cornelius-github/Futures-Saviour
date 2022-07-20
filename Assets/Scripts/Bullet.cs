@@ -43,9 +43,6 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Color bulletColor = this.GetComponent<Material>().color;
-
-        ImpactEffect.GetComponent<Material>().SetColor("bulletColor", bulletColor);
 
         //animation/particle
         GameObject efffectIns = (GameObject)Instantiate(ImpactEffect, target.position, target.rotation);
