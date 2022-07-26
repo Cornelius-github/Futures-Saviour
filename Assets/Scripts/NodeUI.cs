@@ -21,7 +21,6 @@ public class NodeUI : MonoBehaviour
         
     }
 
-
     public void SetTarget(Node node)
     {
         target = node;
@@ -34,12 +33,12 @@ public class NodeUI : MonoBehaviour
         if (ui.gameObject.activeSelf == true)
         {
             currentlyWaiting = true;
-            Debug.Log("not waiting");
+            //Debug.Log("not waiting");
         }
         else
         {
             currentlyWaiting = false;
-            Debug.Log("waiting");
+            //Debug.Log("waiting");
         }
 
 
@@ -59,23 +58,19 @@ public class NodeUI : MonoBehaviour
     public void Upgrade()
     {
         target.UpgradeTurret();
-
-        StopAllCoroutines();
-        StartCoroutine(UpgradeWait());
+        BuildManager.instance.DeselectNode();
     }
 
     //hook up to sell
     public void Sell()
     {
         target.SellTurret();
-
-        StopAllCoroutines();
-        StartCoroutine(UpgradeWait());
+        BuildManager.instance.DeselectNode();
     }
 
     IEnumerator UpgradeWait()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.02f);
 
         BuildManager.instance.DeselectNode();
     }
