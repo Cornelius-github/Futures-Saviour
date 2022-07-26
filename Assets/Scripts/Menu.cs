@@ -45,4 +45,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(4);
         Time.timeScale = 1f;
     }
+
+    public void Level4()
+    {
+        SceneManager.LoadScene(5);
+        Time.timeScale = 1f;
+    }
 }
