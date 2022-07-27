@@ -64,11 +64,16 @@ public class WaveSpawner : MonoBehaviour
             if (waveCount > 1)
             {
                 bossSpawn = false;
-                if (enemyPrefab.GetComponent<Enemy>().speed <= 200)
+                if (enemyPrefab.GetComponent<Enemy>().speed <= 100)
                 {
                     enemyPrefab.GetComponent<Enemy>().health = (1);
-                    enemyPrefab.GetComponent<Enemy>().speed = (5 + waveCount);
+                    enemyPrefab.GetComponent<Enemy>().speed = (5 + (waveCount/10));
                 }
+            }
+            else
+            {
+                enemyPrefab.GetComponent<Enemy>().health = (1);
+                enemyPrefab.GetComponent<Enemy>().speed = (5);
             }
 
             waveCount++;
@@ -81,7 +86,7 @@ public class WaveSpawner : MonoBehaviour
 
             if (((waveCount / 10) == 1)) // add this if the idea is to shorten the gap - && enemyGap >= 0
             {
-                enemyPrefab.GetComponent<Enemy>().health += 1;
+                enemyPrefab.GetComponent<Enemy>().health += 0.1f;
                 //enemyGap -= 0.1f;
             }
         }
@@ -101,10 +106,10 @@ public class WaveSpawner : MonoBehaviour
         //first boss
         if ((randomChance >= 16 && randomChance <=19) && bossSpawn == false)
         {
-            if (boss1.GetComponent<Enemy>().speed <= 200)
+            if (boss1.GetComponent<Enemy>().speed <= 100)
             {
-                boss1.GetComponent<Enemy>().health = (3 + waveCount);
-                boss1.GetComponent<Enemy>().speed = (3 * waveCount);
+                boss1.GetComponent<Enemy>().health = (3 + (waveCount / 10));
+                boss1.GetComponent<Enemy>().speed = (3 * (waveCount / 10));
             }
 
             if (waveCount <= 10)
@@ -119,10 +124,10 @@ public class WaveSpawner : MonoBehaviour
         //second boss
         if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
         {
-            if (boss2.GetComponent<Enemy>().speed <= 200)
+            if (boss2.GetComponent<Enemy>().speed <= 100)
             {
-                boss2.GetComponent<Enemy>().health = (2 + waveCount);
-                boss2.GetComponent<Enemy>().speed = (5 * waveCount);
+                boss2.GetComponent<Enemy>().health = (2 + (waveCount / 10));
+                boss2.GetComponent<Enemy>().speed = (5 * (waveCount / 10));
             }
 
             if (waveCount <= 10)
@@ -137,10 +142,10 @@ public class WaveSpawner : MonoBehaviour
         //second boss
         if ((randomChance > 22) && bossSpawn == false)
         {
-            if (boss3.GetComponent<Enemy>().speed <= 200)
+            if (boss3.GetComponent<Enemy>().speed <= 100)
             {
-                boss3.GetComponent<Enemy>().health = (5 + waveCount);
-                boss3.GetComponent<Enemy>().speed = (1 * waveCount);
+                boss3.GetComponent<Enemy>().health = (5 + (waveCount / 10));
+                boss3.GetComponent<Enemy>().speed = (1 * (waveCount / 10));
             }
 
             if (waveCount <= 10)
