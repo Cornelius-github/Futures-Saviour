@@ -65,7 +65,11 @@ public class WaveSpawner : MonoBehaviour
             //this was in update, which meant it was called every fucking frame, resulting in high speed that broke the game. i love code
             if (waveCount > 1)
             {
-                bossSpawn = false;
+                if ((waveCount/3) == 1)
+                {
+                    bossSpawn = false;
+                }
+
                 if (enemyPrefab.GetComponent<Enemy>().speed <= 100)
                 {
                     enemyPrefab.GetComponent<Enemy>().health = (1);
@@ -105,29 +109,23 @@ public class WaveSpawner : MonoBehaviour
             Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
         }
 
-
-        if (waveCount/3 == bossSpawns)
+        //first boss
+        if ((randomChance >= 16 && randomChance <= 19) && bossSpawn == false)
         {
-            //first boss
-            if ((randomChance >= 16 && randomChance <= 19) && bossSpawn == false)
+            if (boss1.GetComponent<Enemy>().speed <= 100)
             {
-                if (boss1.GetComponent<Enemy>().speed <= 100)
-                {
-                    boss1.GetComponent<Enemy>().health = (3 + (waveCount / 10));
-                    boss1.GetComponent<Enemy>().speed = (3 * (waveCount / 10));
-                }
-
-                if (waveCount <= 10)
-                {
-                    boss1.GetComponent<Enemy>().health = (3);
-                }
-
-                boss = (GameObject)Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
-                bossSpawn = true;
+                boss1.GetComponent<Enemy>().health = (3 + (waveCount / 10));
+                boss1.GetComponent<Enemy>().speed = (3 * (waveCount / 10));
             }
-
-            //second boss
-            if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
+            if (waveCount <= 10)
+            {
+                boss1.GetComponent<Enemy>().health = (3);
+            }
+            boss = (GameObject)Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
+            bossSpawn = true;
+        }
+        //second boss
+        if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
             {
                 if (boss2.GetComponent<Enemy>().speed <= 100)
                 {
@@ -144,8 +142,8 @@ public class WaveSpawner : MonoBehaviour
                 bossSpawn = true;
             }
 
-            //third boss
-            if ((randomChance > 22) && bossSpawn == false)
+        //third boss
+        if ((randomChance > 22) && bossSpawn == false)
             {
                 if (boss3.GetComponent<Enemy>().speed <= 100)
                 {
@@ -162,8 +160,6 @@ public class WaveSpawner : MonoBehaviour
                 bossSpawn = true;
             }
 
-            bossSpawns++;
-        }
 
     }
 }
