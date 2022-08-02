@@ -35,6 +35,8 @@ public class WaveSpawner : MonoBehaviour
 
     public static WaveSpawner instance;
 
+    int bossSpawns = 1;
+
 
     private void Start()
     {
@@ -103,58 +105,64 @@ public class WaveSpawner : MonoBehaviour
             Instantiate(enemyPrefab, spawnpoint.position, spawnpoint.rotation);
         }
 
-        //first boss
-        if ((randomChance >= 16 && randomChance <=19) && bossSpawn == false)
+
+        if (waveCount/3 == bossSpawns)
         {
-            if (boss1.GetComponent<Enemy>().speed <= 100)
+            //first boss
+            if ((randomChance >= 16 && randomChance <= 19) && bossSpawn == false)
             {
-                boss1.GetComponent<Enemy>().health = (3 + (waveCount / 10));
-                boss1.GetComponent<Enemy>().speed = (3 * (waveCount / 10));
+                if (boss1.GetComponent<Enemy>().speed <= 100)
+                {
+                    boss1.GetComponent<Enemy>().health = (3 + (waveCount / 10));
+                    boss1.GetComponent<Enemy>().speed = (3 * (waveCount / 10));
+                }
+
+                if (waveCount <= 10)
+                {
+                    boss1.GetComponent<Enemy>().health = (3);
+                }
+
+                boss = (GameObject)Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
+                bossSpawn = true;
             }
 
-            if (waveCount <= 10)
+            //second boss
+            if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
             {
-                boss1.GetComponent<Enemy>().health = (3);
+                if (boss2.GetComponent<Enemy>().speed <= 100)
+                {
+                    boss2.GetComponent<Enemy>().health = (2 + (waveCount / 10));
+                    boss2.GetComponent<Enemy>().speed = (5 * (waveCount / 10));
+                }
+
+                if (waveCount <= 10)
+                {
+                    boss2.GetComponent<Enemy>().health = (2);
+                }
+
+                boss = (GameObject)Instantiate(boss2, spawnpoint.position, spawnpoint.rotation);
+                bossSpawn = true;
             }
 
-            boss = (GameObject) Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
-            bossSpawn = true;
-        }
-
-        //second boss
-        if ((randomChance >= 20 && randomChance <= 22) && bossSpawn == false)
-        {
-            if (boss2.GetComponent<Enemy>().speed <= 100)
+            //third boss
+            if ((randomChance > 22) && bossSpawn == false)
             {
-                boss2.GetComponent<Enemy>().health = (2 + (waveCount / 10));
-                boss2.GetComponent<Enemy>().speed = (5 * (waveCount / 10));
+                if (boss3.GetComponent<Enemy>().speed <= 100)
+                {
+                    boss3.GetComponent<Enemy>().health = (5 + (waveCount / 10));
+                    boss3.GetComponent<Enemy>().speed = (1 * (waveCount / 10));
+                }
+
+                if (waveCount <= 10)
+                {
+                    boss3.GetComponent<Enemy>().health = (5);
+                }
+
+                boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);
+                bossSpawn = true;
             }
 
-            if (waveCount <= 10)
-            {
-                boss2.GetComponent<Enemy>().health = (2);
-            }
-
-            boss = (GameObject)Instantiate(boss2, spawnpoint.position, spawnpoint.rotation);
-            bossSpawn = true;
-        }
-
-        //second boss
-        if ((randomChance > 22) && bossSpawn == false)
-        {
-            if (boss3.GetComponent<Enemy>().speed <= 100)
-            {
-                boss3.GetComponent<Enemy>().health = (5 + (waveCount / 10));
-                boss3.GetComponent<Enemy>().speed = (1 * (waveCount / 10));
-            }
-
-            if (waveCount <= 10)
-            {
-                boss3.GetComponent<Enemy>().health = (5);
-            }
-
-            boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);
-            bossSpawn = true;
+            bossSpawns++;
         }
 
     }
