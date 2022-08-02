@@ -65,7 +65,7 @@ public class WaveSpawner : MonoBehaviour
             //this was in update, which meant it was called every fucking frame, resulting in high speed that broke the game. i love code
             if (waveCount > 1)
             {
-                if ((waveCount/3) == 1)
+                if (((waveCount/3) % 1) == 0)
                 {
                     bossSpawn = false;
                 }

@@ -46,12 +46,14 @@ public class NodeUI : MonoBehaviour
         if (currentlyWaiting == false)
         {
             ui.SetActive(true);
+            ui.transform.Translate(0f, 4f, 0f);
         }
     }
 
     public void Hide()
     {
         ui.SetActive(false);
+        ui.transform.Translate(0f, -4f, 0f);
     }
 
     //hook up to uprgade
