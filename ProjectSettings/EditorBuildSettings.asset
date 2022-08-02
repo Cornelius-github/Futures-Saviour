@@ -11,16 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: b9d6f9b51fb042a48a6b286c507b2487
+  - enabled: 1
+    path: Assets/Scenes/SpiralLevel.unity
+    guid: 20b16cd58b619bc4787171029fc23c9c
   - enabled: 0
     path: Assets/Scenes/Removed Levels/PlaytestLevel1.unity
     guid: 3a30578eb94adc74fba56d07ad9bb78c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Removed Levels/PlaytestLevel2.unity
     guid: 5ca650d9cf69ad14f9ef5969692ef8b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PlaytestLevel3.unity
     guid: 857ee06dc593dac41b8b4c1e4abc2ccd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PlaytestLevel4.unity
     guid: b451580bdc74e5a4999142e34315980e
   - enabled: 1
