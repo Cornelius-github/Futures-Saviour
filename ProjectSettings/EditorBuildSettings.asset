@@ -20,13 +20,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Removed Levels/PlaytestLevel2.unity
     guid: 5ca650d9cf69ad14f9ef5969692ef8b7
-  - enabled: 0
-    path: Assets/Scenes/Removed Levels/PlaytestLevel3.unity
+  - enabled: 1
+    path: Assets/Scenes/PlaytestLevel3.unity
     guid: 857ee06dc593dac41b8b4c1e4abc2ccd
-  - enabled: 1
-    path: Assets/Scenes/PlaytestLevel4.unity
+  - enabled: 0
+    path: Assets/Scenes/Removed Levels/PlaytestLevel4.unity
     guid: b451580bdc74e5a4999142e34315980e
-  - enabled: 1
-    path: Assets/Scenes/PlaytestLevel5.unity
+  - enabled: 0
+    path: Assets/Scenes/Removed Levels/PlaytestLevel5.unity
     guid: c0d84d6244e7c0941b60d73bf44f789f
   m_configObjects: {}
