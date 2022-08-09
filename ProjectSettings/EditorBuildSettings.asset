@@ -12,21 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: b9d6f9b51fb042a48a6b286c507b2487
   - enabled: 1
-    path: Assets/Scenes/SpiralLevel.unity
-    guid: 20b16cd58b619bc4787171029fc23c9c
-  - enabled: 0
-    path: Assets/Scenes/Removed Levels/PlaytestLevel1.unity
-    guid: 3a30578eb94adc74fba56d07ad9bb78c
-  - enabled: 0
-    path: Assets/Scenes/Removed Levels/PlaytestLevel2.unity
-    guid: 5ca650d9cf69ad14f9ef5969692ef8b7
+    path: Assets/Scenes/Testing Levels/SpiralTest.unity
+    guid: ea291f65c7c80f44492dc8482a8a7e75
   - enabled: 1
-    path: Assets/Scenes/PlaytestLevel3.unity
-    guid: 857ee06dc593dac41b8b4c1e4abc2ccd
-  - enabled: 0
-    path: Assets/Scenes/Removed Levels/PlaytestLevel4.unity
-    guid: b451580bdc74e5a4999142e34315980e
-  - enabled: 0
-    path: Assets/Scenes/Removed Levels/PlaytestLevel5.unity
-    guid: c0d84d6244e7c0941b60d73bf44f789f
+    path: Assets/Scenes/Testing Levels/UpDownTest.unity
+    guid: 6dc0aa380dc1cc44eb90709aafbe822d
   m_configObjects: {}

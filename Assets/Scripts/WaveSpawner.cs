@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public int waveCount = 0;
+    public float waveCount = 0;
 
     //enemies
     public Transform enemyPrefab;
@@ -67,6 +67,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (((waveCount/3) % 1) == 0)
                 {
+                    Debug.Log("can spawn boss");
                     bossSpawn = false;
                 }
 
@@ -120,6 +121,7 @@ public class WaveSpawner : MonoBehaviour
             if (waveCount <= 10)
             {
                 boss1.GetComponent<Enemy>().health = (3);
+                boss1.GetComponent<Enemy>().speed = (3);
             }
             boss = (GameObject)Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
             bossSpawn = true;
@@ -136,6 +138,7 @@ public class WaveSpawner : MonoBehaviour
                 if (waveCount <= 10)
                 {
                     boss2.GetComponent<Enemy>().health = (2);
+                    boss2.GetComponent<Enemy>().speed = (5);
                 }
 
                 boss = (GameObject)Instantiate(boss2, spawnpoint.position, spawnpoint.rotation);
@@ -154,6 +157,7 @@ public class WaveSpawner : MonoBehaviour
                 if (waveCount <= 10)
                 {
                     boss3.GetComponent<Enemy>().health = (5);
+                    boss3.GetComponent<Enemy>().speed = (1);
                 }
 
                 boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);

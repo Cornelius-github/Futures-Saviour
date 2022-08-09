@@ -7,7 +7,7 @@ public class LiveManager : MonoBehaviour
 {
     public bool gameEnded = false;
 
-    public int waveCounter;
+    public float waveCounter;
     public Text WaveCount;
     public GameObject GameOver;
 
