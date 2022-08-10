@@ -67,7 +67,6 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (((waveCount/3) % 1) == 0)
                 {
-                    Debug.Log("can spawn boss");
                     bossSpawn = false;
                 }
 
@@ -85,7 +84,9 @@ public class WaveSpawner : MonoBehaviour
 
             waveCount++;
             lm.waveCounter = waveCount;
-            for (int i = 0; i < waveCount; i++)
+            float enemyCount = waveCount * 2;
+
+            for (int i = 0; i < enemyCount; i++)
             {
                 SpawnEnemy();
                 yield return new WaitForSeconds(enemyGap); //waits for .8 seconds then continues going through
@@ -121,7 +122,7 @@ public class WaveSpawner : MonoBehaviour
             if (waveCount <= 10)
             {
                 boss1.GetComponent<Enemy>().health = (3);
-                boss1.GetComponent<Enemy>().speed = (3);
+                boss1.GetComponent<Enemy>().speed = (4);
             }
             boss = (GameObject)Instantiate(boss1, spawnpoint.position, spawnpoint.rotation);
             bossSpawn = true;
@@ -157,7 +158,7 @@ public class WaveSpawner : MonoBehaviour
                 if (waveCount <= 10)
                 {
                     boss3.GetComponent<Enemy>().health = (5);
-                    boss3.GetComponent<Enemy>().speed = (1);
+                    boss3.GetComponent<Enemy>().speed = (3);
                 }
 
                 boss = (GameObject)Instantiate(boss3, spawnpoint.position, spawnpoint.rotation);
