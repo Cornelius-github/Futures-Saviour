@@ -100,6 +100,8 @@ public class Node : MonoBehaviour
         //turret has been upgraded
         currentBlueprint.upgradeCost += UpgradingIncrease;
 
+        UpgradingIncrease += 5;
+
         //nodeUI.text = ("UPGRADE" + "\n" + "-" + currentBlueprint.upgradeCost);
         return;
     }

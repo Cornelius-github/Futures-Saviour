@@ -79,28 +79,32 @@ public class Shop : MonoBehaviour
 
     public void InventoryCheck(TurretBlueprint turret)
     {
-        //modifications to inventory
-        if (turret.amount <= 0)
-        {
-            if (turret == secondTurret)
-            {
-                boss1turret.SetActive(false);
-            }
-            if (turret == thirdTurret)
-            {
-                boss2turret.SetActive(false);
-            }
-            if (turret == fourthTurret)
-            {
-                boss3turret.SetActive(false);
-            }
+        ////modifications to inventory
+        //if (turret.amount <= 0)
+        //{
+        //    if (turret == secondTurret)
+        //    {
+        //        boss1turret.SetActive(false);
+        //    }
+        //    if (turret == thirdTurret)
+        //    {
+        //        boss2turret.SetActive(false);
+        //    }
+        //    if (turret == fourthTurret)
+        //    {
+        //        boss3turret.SetActive(false);
+        //    }
 
-        }
-        else
-        {
-            boss1amount.text = turret.amount.ToString();
-            boss2amount.text = turret.amount.ToString();
-            boss3amount.text = turret.amount.ToString();
-        }
+        //}
+        //else
+        //{
+        //    boss1amount.text = turret.amount.ToString();
+        //    boss2amount.text = turret.amount.ToString();
+        //    boss3amount.text = turret.amount.ToString();
+        //}
+
+        boss1amount.text = turret.amount.ToString();
+        boss2amount.text = turret.amount.ToString();
+        boss3amount.text = turret.amount.ToString();
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    
+    public GameObject Guide;
+    public GameObject MenuQuit;
+
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -50,5 +52,17 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(5);
         Time.timeScale = 1f;
+    }
+
+    public void HowTo()
+    {
+        Guide.SetActive(true);
+        MenuQuit.SetActive(false);
+    }
+
+    public void EscapeHowTo()
+    {
+        Guide.SetActive(false);
+        MenuQuit.SetActive(true);
     }
 }

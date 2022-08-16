@@ -8,7 +8,7 @@ public class WaveSpawner : MonoBehaviour
     public float waveCount = 0;
 
     //enemies
-    public Transform enemyPrefab;
+    public GameObject enemyPrefab;
     public GameObject boss1;
     public GameObject boss2;
     public GameObject boss3;

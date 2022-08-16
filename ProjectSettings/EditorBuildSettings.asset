@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Final Levels/MainMenu.unity
     guid: dafa767085b2fa345a97c7922c22f8a2
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
+    path: Assets/Scenes/Final Levels/LevelSelect.unity
     guid: b9d6f9b51fb042a48a6b286c507b2487
   - enabled: 1
-    path: Assets/Scenes/Testing Levels/SpiralTest.unity
-    guid: ea291f65c7c80f44492dc8482a8a7e75
+    path: Assets/Scenes/Final Levels/Spiral.unity
+    guid: bdcb5bdf793bf674991933adbdf1c045
   - enabled: 1
-    path: Assets/Scenes/Testing Levels/UpDownTest.unity
-    guid: 6dc0aa380dc1cc44eb90709aafbe822d
+    path: Assets/Scenes/Final Levels/UpDown.unity
+    guid: 507cea7963f36cf4daa8590332875d73
   m_configObjects: {}
