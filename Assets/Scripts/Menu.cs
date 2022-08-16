@@ -16,6 +16,10 @@ public class Menu : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene(1);
+
+
+        PlayerPrefs.GetString("NewPlayer", "false");
+        PlayerPrefs.Save();
     }
 
     public void ReloadScene()
@@ -34,6 +38,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(2);
         Time.timeScale = 1f;
+
+        if (PlayerPrefs.HasKey("NewPlayer"))
+        {
+            //it is a new player
+            Debug.Log("new player");
+        }
     }
 
     public void Level2()
@@ -54,6 +64,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    //how to play window
     public void HowTo()
     {
         Guide.SetActive(true);
@@ -64,5 +75,18 @@ public class Menu : MonoBehaviour
     {
         Guide.SetActive(false);
         MenuQuit.SetActive(true);
+    }
+
+    //seeing if the player knows how to play
+    public void HTPYes()
+    {
+        PlayerPrefs.GetString("OldPlayer", "true");
+        PlayerPrefs.Save();
+    }
+
+    public void HTPNo()
+    {
+        PlayerPrefs.GetString("NewPlayer", "false");
+        PlayerPrefs.Save();
     }
 }

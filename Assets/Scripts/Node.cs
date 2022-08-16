@@ -71,7 +71,7 @@ public class Node : MonoBehaviour
         {
             blueprint.amount--;
 
-            GameObject _turret = (GameObject)Instantiate(blueprint.prefab, (transform.position + offset), Quaternion.identity);
+            GameObject _turret = (GameObject)Instantiate(blueprint.prefab, (transform.position), Quaternion.identity);
             turret = _turret;
 
             shop.InventoryCheck(blueprint);
@@ -87,9 +87,14 @@ public class Node : MonoBehaviour
 
         PlayerStats.Money -= currentBlueprint.upgradeCost;
 
-        //consistent upgrades
+        //consistent upgrades but a random range value
+        statUpgrades = (Random.Range(((float)(0.1)), (float)0.7));
         turret.GetComponent<Turrett>().fireRate += statUpgrades;
+
+        statUpgrades = (Random.Range(((float)(0.1)), (float)0.7));
         turret.GetComponent<Turrett>().range += statUpgrades;
+
+        statUpgrades = (Random.Range(((float)(0.1)), (float)0.7));
         turret.GetComponent<Turrett>().bulletPrefab.GetComponent<Bullet>().damage += statUpgrades;
 
         //currentBlueprint = blueprint;
