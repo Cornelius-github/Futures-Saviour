@@ -135,7 +135,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31715167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88093138}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -1679,6 +1679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -1693,7 +1697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -1929,6 +1933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (157)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -1943,7 +1951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -2109,6 +2117,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -2119,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -2152,7 +2164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233700087}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -2462,6 +2474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -2472,7 +2488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -2736,6 +2752,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -2746,7 +2766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -2835,7 +2855,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304339449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -3484,6 +3504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b64c7ab7548314da5426fac559f5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Guide: {fileID: 0}
+  MenuQuit: {fileID: 0}
 --- !u!1001 &382678341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3856,7 +3878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410269521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -3879,7 +3901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435719043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -4032,6 +4054,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -4046,7 +4072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -4277,7 +4303,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474649232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -4300,7 +4326,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481836857}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -4323,7 +4349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491263468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -4531,6 +4557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -4541,7 +4571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -5981,6 +6011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -5995,7 +6029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -6028,7 +6062,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653090444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -6126,7 +6160,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663488966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -6270,6 +6304,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -6280,7 +6318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -6351,6 +6389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -6361,7 +6403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -6563,6 +6605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -6573,7 +6619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -6761,7 +6807,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744127023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -6998,6 +7044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (133)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -7008,7 +7058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -7768,7 +7818,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814349006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -7895,7 +7945,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888448821}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -8093,7 +8143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901597314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -8163,6 +8213,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -8173,7 +8227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -8807,6 +8861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -8821,7 +8879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -8897,6 +8955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (139)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -8907,7 +8969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -9706,6 +9768,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -9720,7 +9786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -10023,6 +10089,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -10041,7 +10111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -10140,7 +10210,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093791391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -10237,7 +10307,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135105490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11135,7 +11205,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196924662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11158,7 +11228,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202246338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11328,6 +11398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -11338,7 +11412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -11407,7 +11481,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237121723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11485,6 +11559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (141)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -11499,7 +11577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -11562,7 +11640,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259776991}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11706,6 +11784,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -11720,7 +11802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -11753,7 +11835,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271392068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11776,7 +11858,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276651333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11822,7 +11904,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303415397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -11845,7 +11927,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311088549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -12428,6 +12510,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -12438,7 +12524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -12831,7 +12917,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402671785}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -12909,6 +12995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -12919,7 +13009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -12990,6 +13080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (137)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -13000,7 +13094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -13071,6 +13165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -13081,7 +13179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -13519,6 +13617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -13529,7 +13631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -13654,7 +13756,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492904704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -14112,6 +14214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -14122,7 +14228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -14330,7 +14436,7 @@ MonoBehaviour:
   secondTurret:
     prefab: {fileID: 3646987666911851740, guid: b492698a77a42834188cd5c2bd05ff21, type: 3}
     cost: 0
-    amount: 0
+    amount: 50
     upgradedPrefab: {fileID: 0}
     upgradeCost: 50
   thirdTurret:
@@ -14425,6 +14531,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -14439,7 +14549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -14792,6 +14902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -14802,7 +14916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -14933,6 +15047,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -14943,7 +15061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -15489,7 +15607,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712534055}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -16445,7 +16563,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823391936}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -16576,6 +16694,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -16586,7 +16708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -16657,6 +16779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -16667,7 +16793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -16695,7 +16821,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845783113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -16915,7 +17041,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866412438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -17089,6 +17215,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -17103,7 +17233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -17357,7 +17487,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916250214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -17895,7 +18025,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968480104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -18407,6 +18537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -18417,7 +18551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -18655,7 +18789,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023217926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -18787,6 +18921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -18797,7 +18935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -19438,7 +19576,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095457340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -19508,6 +19646,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -19518,7 +19660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
@@ -19774,7 +19916,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126719567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -20005,6 +20147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Node (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692751167468166862, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5651649566724302586, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: nodeUI
       value: 
@@ -20019,7 +20165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955850782998657992, guid: 5f180a82a938c074fb79a31f1a537546, type: 3}
       propertyPath: m_LightProbeUsage
